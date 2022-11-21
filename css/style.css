@@ -1,0 +1,121 @@
+/*Definiendo fuente general */
+.fuente{
+    font-family: 'Roboto Mono', monospace; font-weight: bold;
+    text-align: center;
+}
+
+.fuente2{
+    font-family: 'Roboto Mono', monospace; font-weight: bold;
+    Border: solid;
+    text-align: center;
+}
+
+.fuente3{
+    font-family: 'Roboto Mono', monospace; font-weight: bold;
+    display: flex;
+}
+
+.grid-titulo{
+    color:blue;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace; font-weight: bold;
+    text-align: center;
+}
+
+.grid-imagen-index{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.grid-imagen-locales{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.grid-imagen-mascotas{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.foto-index{
+    width: 100%;
+}
+
+.foto-mascotas{
+    width: 100%;
+}
+
+.foto-locales{
+    width: 100%;
+}
+
+.grid-imagenes-producto{
+    justify-content: center;
+    width: 50%;
+    max-width: 1000px;
+    min-width: 100px;
+    max-height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px;
+}
+
+.fotos-producto{
+    width: 100%;
+    object-fit: cover;
+
+}
+.grid-imagenes-producto > div{
+    object-fit: cover;
+    max-width:300px;
+    min-width: 100px;
+
+
+}
+
+/*Fuente de los hipervinculos */
+#vinculos{
+    font-family: 'Poor Story', cursive; font-weight: bold;
+}
+
+/*Caracteristicas de borde, color y fuente del menu de hipervinculos */
+#contenedorvinculos{
+    background-color: lightgreen;
+    border: solid;
+    border-style: dashed;
+    border-width: thick;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 350px;
+    font-family: 'Poor Story', cursive; font-weight: bold;    
+}
+
+/*Caracteristicas de los iconos de las listas */
+#contenedorvinculos ul{
+    background-color: green;
+    list-style-type: upper-roman;
+}
+
+/*Caracteristicas texto lista*/
+#contenedorvinculos ul li{
+    background-color:rgb(192, 245, 192);
+    list-style-type: upper-roman;
+}
+
+/*Flex logo*/
+#flexlogo{
+    padding: 40px;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+
