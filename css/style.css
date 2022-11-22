@@ -21,6 +21,10 @@
     text-transform: uppercase;
     font-family: 'Roboto Mono', monospace; font-weight: bold;
     text-align: center;
+    animation: heartBeat;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-iteration-count: 2; 
 }
 
 .grid-imagen-index{
@@ -88,7 +92,20 @@
 
 /*Caracteristicas de borde, color y fuente del menu de hipervinculos */
 #contenedorvinculos{
-    background-color: lightgreen;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
     border: solid;
     border-style: dashed;
     border-width: thick;
@@ -101,13 +118,39 @@
 
 /*Caracteristicas de los iconos de las listas */
 #contenedorvinculos ul{
-    background-color: green;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
     list-style-type: upper-roman;
 }
 
 /*Caracteristicas texto lista*/
 #contenedorvinculos ul li{
-    background-color:rgb(192, 245, 192);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
     list-style-type: upper-roman;
 }
 
@@ -115,7 +158,11 @@
 #flexlogo{
     padding: 40px;
     display: flex;
-    justify-content: flex-end;   
+    justify-content: flex-end;
+    animation: bounce;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;    
 }
 
 
