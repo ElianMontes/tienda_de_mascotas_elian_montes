@@ -1,7 +1,20 @@
-/*Definiendo fuente general */
+body{
+    background-color: antiquewhite;
+}
+
+/*Definiendo fuentes */
 .fuente{
     font-family: 'Roboto Mono', monospace; font-weight: bold;
     text-align: center;
+    font-size: 20px;
+}
+
+.fuente::selection{
+    background-color: yellowgreen;
+}
+
+.fuente:hover{
+    color: tomato;
 }
 
 .fuente2{
@@ -10,11 +23,28 @@
     text-align: center;
 }
 
+.fuente2::selection{
+    background-color: chartreuse;
+}
+
+.fuente2:hover{
+    color: tomato;
+}
+
 .fuente3{
     font-family: 'Roboto Mono', monospace; font-weight: bold;
     display: flex;
 }
 
+.fuente3::selection{
+    background-color: springgreen;
+}
+
+.fuente3:hover{
+    color: tomato;
+}
+
+/*Grid, animacion y fuente del titulo*/
 .grid-titulo{
     color:blue;
     font-size: 35px;
@@ -27,68 +57,21 @@
     animation-iteration-count: 2; 
 }
 
-.grid-imagen-index{
-    width: 50%;
-    max-width: 1000px;
-    min-width: 320px;
-    margin: auto;
+.grid-titulo:hover{
+    color:cadetblue
 }
 
-.grid-imagen-locales{
-    width: 50%;
-    max-width: 1000px;
-    min-width: 320px;
-    margin: auto;
-}
-
-.grid-imagen-mascotas{
-    width: 50%;
-    max-width: 1000px;
-    min-width: 320px;
-    margin: auto;
-}
-
-.foto-index{
-    width: 100%;
-}
-
-.foto-mascotas{
-    width: 100%;
-}
-
-.foto-locales{
-    width: 100%;
-}
-
-.grid-imagenes-producto{
-    justify-content: center;
-    width: 50%;
-    max-width: 1000px;
-    min-width: 100px;
-    max-height: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 300px 300px;
-}
-
-.fotos-producto{
-    width: 100%;
-    object-fit: cover;
-
-}
-.grid-imagenes-producto > div{
-    object-fit: cover;
-    max-width:300px;
-    min-width: 100px;
-
-
+/*Pseudoclase vinculos*/
+a:hover{
+    color:darkgoldenrod
 }
 
 /*Fuente de los hipervinculos */
 #vinculos{
     font-family: 'Poor Story', cursive; font-weight: bold;
 }
+
+
 
 /*Caracteristicas de borde, color y fuente del menu de hipervinculos */
 #contenedorvinculos{
@@ -111,12 +94,12 @@
     border-width: thick;
     border-radius: 5px;
     margin: 0 auto;
-    padding: 15px;
-    width: 350px;
+    padding: 1px;
+    width: 290px;
     font-family: 'Poor Story', cursive; font-weight: bold;    
 }
 
-/*Caracteristicas de los iconos de las listas */
+/*Caracteristicas de los iconos de las listas de los hipervinculos*/
 #contenedorvinculos ul{
     background: linear-gradient(
         90deg,
@@ -154,7 +137,9 @@
     list-style-type: upper-roman;
 }
 
-/*Flex logo*/
+
+
+/*Flex del logo*/
 #flexlogo{
     padding: 40px;
     display: flex;
@@ -162,7 +147,59 @@
     animation: bounce;
     animation-delay: 5s;
     animation-duration: 2s;
-    animation-iteration-count: infinite;    
+    
+
+}
+
+/*CSS index*/
+
+/*Grid imagen index*/
+.grid-imagen-index{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+/*Foto de index*/
+.foto-index{
+    width: 95%;
+}
+
+/*CSS Producto*/
+
+/*Flex imagenes producto*/
+#flexproductoimagenes{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 
+/*CSS Mascotas*/
+
+/*Grid imagen mascotas*/
+.grid-imagen-mascotas{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+/*Imagen mascotas*/
+.foto-mascotas{
+    width: 95%;
+}
+
+/*CSS Mascotas*/
+
+/*Grid imagen mascotas*/
+.grid-imagen-locales{
+    width: 70%;
+    margin: auto;
+}
+
+/*Imagen mascotas*/
+.foto-locales{
+    width: 100%;
+}
