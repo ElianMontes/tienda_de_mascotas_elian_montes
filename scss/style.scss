@@ -2,8 +2,25 @@ body{
     background-color: antiquewhite;
 }
 
+
+.breadcrums{
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
 /*Definiendo fuentes */
+$color: (
+    primero:black,
+    segundo:Darkblue,
+    tercero:Purple,
+    cuarto:silver,
+    quinto:Darkred,
+);
+
 .fuente{
+    color: map-get($color, primero);
     font-family: 'Roboto Mono', monospace; font-weight: bold;
     text-align: center;
     font-size: 20px;
@@ -17,7 +34,23 @@ body{
     color: tomato;
 }
 
+.fuente1-5{
+    color: map-get($color, cuarto);
+    font-family: 'Roboto Mono', monospace; font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fuente1-5::selection{
+    background-color: yellowgreen;
+}
+
+.fuente1-5:hover{
+    color: tomato;
+}
+
 .fuente2{
+    color: map-get($color, segundo);
     font-family: 'Roboto Mono', monospace; font-weight: bold;
     Border: solid;
     text-align: center;
@@ -31,7 +64,23 @@ body{
     color: tomato;
 }
 
+.fuente2-5{
+    color: map-get($color, quinto);
+    font-family: 'Roboto Mono', monospace; font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fuente2-5::selection{
+    background-color: yellowgreen;
+}
+
+.fuente2-5:hover{
+    color: tomato;
+}
+
 .fuente3{
+    color: map-get($color, tercero);
     font-family: 'Roboto Mono', monospace; font-weight: bold;
     display: flex;
 }
