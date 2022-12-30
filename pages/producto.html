@@ -7,6 +7,7 @@
     <meta name="description" content="Aqui se venden los produtos de la tienda de mascotas Matutano">
     <meta name="keywords" content="TIENDA, MASCOTAS, MATUTANO, ANIMALES, JUGUETES, ALIMENTO, JAULAS, CORREAS, PECERAS, PIPETA, CURABICHERA">
     <title>Productos</title>
+    <link rel="shortcut icon" href="../assets/img/iconopaginapetshop.png">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
@@ -46,14 +47,44 @@
     <div id="flexproductoimagenes">
         
         <div>
-            <img width="151px" class="fotos-producto" src="../assets/img/imagenproductos1.jpg">
+            <img width="300" class="fotos-producto" src="../assets/img/imagenproductos1.png">
         </div>
 
-        <div>
-            <img width=149px" class="fotos-producto" src="../assets/img/imagenproductos3.jpg">
-        </div>
         
     </div>
+
+    <form>
+        <center>
+            <label for="dni">DNI: </label>
+            <input type="number" id="dni" placeholder="Ponga su DNI aqui" required><br>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Ponga su nombre completo aqui" required><br>
+            <label>Email:</label>
+            <input type="email" placeholder="Introduzca su mail" required><br>
+            <label for="telefono">Telefono: </label>
+            <input type="number" id="telefono" placeholder="Ponga su telefono aqui" required><br>
+            <label for="Producto">Producto: </label>
+            <select name="" id="">
+                <option value="">Jaula</option>
+                <option value="">Collar</option>
+                <option value="">Comida</option>
+                <option value="">Pecera</option>
+                <option value="">Medicamentos</option>
+            </select><br>
+            <label for="mascota">Mascota para la que se quiere el producto: </label>
+            <select name="" id="">
+                <option value="">Perro</option>
+                <option value="">Gato</option>
+                <option value="">Pez</option>
+                <option value="">Hamster</option>
+                <option value="">Pajaro</option>
+                <option value="">Huron</option>
+                <option value="">Conejo</option>
+            </select>
+            <input type="submit">
+        </center>
+    </form>
+
     <footer>
         
         

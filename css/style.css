@@ -1,12 +1,10 @@
 body {
   background-color: antiquewhite; }
 
-  .breadcrums {
-    padding: 40px;
-    display: flex;
-    justify-content: flex-start;
-
- }
+.breadcrums {
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start; }
 
 /*Definiendo fuentes */
 .fuente {
@@ -75,8 +73,9 @@ body {
 
 /*Grid, animacion y fuente del titulo*/
 .grid-titulo {
+  font: "Roboto Mono", monospace;
   border-radius: 4px;
-  height: 50px;
+  height: 20px;
   width: 50%;
   margin: auto;
   position: relative;
@@ -84,14 +83,11 @@ body {
   overflow: hidden;
   border: 2px solid lightblue;
   color: blue;
-  font-size: 35px;
+  font-size: 15px;
   text-transform: uppercase;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
   text-align: center;
   transition: all 500ms ease;
   z-index: 0;
-  overflow: hidden;
   animation: heartBeat;
   animation-delay: 5s;
   animation-duration: 5s;
@@ -136,18 +132,22 @@ a:hover {
   margin: 0 auto;
   padding: 1px;
   width: 290px;
+  gap: 30px;
   font-family: 'Poor Story', cursive;
   font-weight: bold; }
 
 /*Caracteristicas de los iconos de las listas de los hipervinculos*/
-#contenedorvinculos ul {
+#contenedorvinculos nav ul {
   background: linear-gradient(90deg, red 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, red 100%);
   list-style-type: upper-roman; }
 
 /*Caracteristicas texto lista*/
-#contenedorvinculos ul li {
-  background: linear-gradient(90deg, red 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, red 100%);
+#contenedorvinculos nav {
   list-style-type: upper-roman; }
+  #contenedorvinculos nav ul {
+    background: linear-gradient(90deg, red 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, red 100%); }
+  #contenedorvinculos nav li {
+    display: inline-block; }
 
 /*Flex del logo*/
 #flexlogo {
@@ -164,11 +164,27 @@ a:hover {
   width: 50%;
   max-width: 1000px;
   min-width: 320px;
-  margin: auto; }
+  margin: auto;
+  justify-content: center; }
 
 /*Foto de index*/
 .foto-index {
-  width: 95%; }
+  width: 50%; }
+
+/*Foto Productos*/
+.fotos-productos {
+  width: 50%; }
+
+/*Grid y foto contactos*/
+.grid-imagen-contactos {
+  width: 50%;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+  justify-content: center; }
+
+.foto-contactos {
+  width: 50%; }
 
 /*CSS Producto*/
 /*Flex imagenes producto*/

@@ -21,7 +21,7 @@
 <body>
   
     <header>
-        <h1 class="grid-titulo">Mascotas disponibles a la venta</h1>
+        <h1 class="grid-titulo">Mascotas a la venta</h1>
     </header>
     <nav>
         <div>
@@ -43,10 +43,38 @@
             <div class="grid-imagen-mascotas">
                 <div>
                     <p class="fuente2-5">Ofrecemos todo tipos de mascotas como: Perros, gatos, peces, pajaros, urones, etc.</p>
-                    <img class="foto-mascotas" src="../assets/img/imagenmascotas1.jpg">
+                    <img class="foto-mascotas" src="../assets/img/imagenmascotas1.png">
                 </div>    
         </article>
     </section>
+
+    <form>
+        <center>
+            <label for="dni">DNI: </label>
+            <input type="number" id="dni" placeholder="Ponga su DNI aqui" required><br>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Ponga su nombre completo aqui" required><br>
+            <label>Email:</label>
+            <input type="email" placeholder="Introduzca su mail" required><br>
+            <label for="telefono">Telefono: </label>
+            <input type="number" id="telefono" placeholder="Ponga su telefono aqui" required><br>
+            <label for="mascota">Mascota a adoptar: </label>
+            <select name="" id="">
+                <option value="">Perro</option>
+                <option value="">Gato</option>
+                <option value="">Pez</option>
+                <option value="">Hamster</option>
+                <option value="">Pajaro</option>
+                <option value="">Huron</option>
+                <option value="">Conejo</option>
+            </select><br>
+            <label >Sexo requerido de la mascota: </label><br>
+            <input type="radio" name="sexo">Macho<br>
+            <input type="radio" name="sexo">Hembra<br>
+            <input type="submit">
+        </center>
+    </form>
+
     <footer>
         
         
